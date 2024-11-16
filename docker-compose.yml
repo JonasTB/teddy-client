@@ -6,7 +6,7 @@ services:
     container_name: bd-post
     restart: always
     ports:
-      - "5433:5432"
+      - "5433:5433"
     volumes:
       - pgdata:/var/lib/postgresql/data
     environment:
@@ -33,7 +33,7 @@ services:
 
   frontend:
     build:
-      context: ./crud-front
+      context: ./crud-frontend
       dockerfile: Dockerfile
     container_name: crud-frontend
     restart: always
