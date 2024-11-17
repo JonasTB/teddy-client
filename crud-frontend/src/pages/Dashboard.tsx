@@ -8,7 +8,7 @@ import CreateCardModal from '../components/CreateCardModal';
 import ConfirmDeleteModal from '../components/ConfirmedDeleteModal';
 import { toast } from 'react-toastify';
 import { useSelectedClients } from '../contexts/GlobalContext';
-import { updateClient, getAllClients } from '../services/clients';
+import { getAllClients } from '../services/clients';
 
 interface Card {
   id: number;
@@ -86,7 +86,10 @@ function Dashboard() {
       <div className="flex-grow overflow-y-auto p-6">
         <h1 className="text-3xl font-bold text-center mb-8">Clientes</h1>
 
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between items-center mb-4">
+          <span className="text-sm text-gray-600">
+            Clientes encontrados: <strong>{cards.length}</strong>
+          </span>
           <div className="flex items-center space-x-2">
             <span className="text-sm text-gray-600">Clientes por página:</span>
             <select
