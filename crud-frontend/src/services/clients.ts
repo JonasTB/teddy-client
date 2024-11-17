@@ -7,7 +7,7 @@ export interface Client {
   enterprise: number;
 }
 
-export const createClient = async (client: Client): Promise<Client> => {
+export const createClient = async (client: Partial<Omit<Client, 'id'>>): Promise<Client> => {
   try {
     const response = await api.post<Client>('/client', client);
     return response.data;
