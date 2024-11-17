@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Client } from 'src/client/entities/client.entity';
+import { Client } from 'src/domain/entities/client.entity';
 import { DataSourceOptions } from 'typeorm'
 
 export const dataSourceOptions: DataSourceOptions = {

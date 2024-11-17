@@ -9,13 +9,13 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { FindOneService } from '../services/findone.service';
-import { FindAllService } from '../services/findall.service';
-import { CreateService } from '../services/create.service';
+import { FindOneService } from '../usecases/client/services/findone.service';
+import { FindAllService } from '../usecases/client/services/findall.service';
+import { CreateService } from '../usecases/client/services/create.service';
+import { UpdateService } from '../usecases/client/services/update.service';;
+import { DeleteService } from '../usecases/client/services/delete.service';;
 import { CreateClientDto } from '../dtos/create.dto';
 import { UpdateClientDto } from '../dtos/update.dto';
-import { UpdateService } from '../services/update.service';
-import { DeleteService } from '../services/delete.service';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Clients')

@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UpdateService } from '../services/update.service';
 import { Repository } from 'typeorm';
-import { Client } from '../entities/client.entity';
+import { Client } from '../../../../domain/entities/client.entity';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { UpdateClientDto } from '../dtos/update.dto';
 import { NotFoundException } from '@nestjs/common';

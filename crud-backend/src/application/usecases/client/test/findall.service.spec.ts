@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { FindAllService } from '../services/findall.service';
 import { Repository } from 'typeorm';
-import { Client } from '../entities/client.entity';
+import { Client } from '../../../../domain/entities/client.entity';
 import { getRepositoryToken } from '@nestjs/typeorm';
 
 describe('FindAllService', () => {

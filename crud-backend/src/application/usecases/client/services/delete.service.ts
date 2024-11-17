@@ -1,28 +1,26 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Client } from "../entities/client.entity";
+import { Client } from "../../../../domain/entities/client.entity";
 import { Repository } from "typeorm";
-import { UpdateClientDto } from "../dtos/update.dto";
 
 @Injectable()
-export class UpdateService {
+export class DeleteService {
     constructor(
         @InjectRepository(Client)
         private readonly clientRepository: Repository<Client>
     ) { }
 
-    async update(id: number, update: UpdateClientDto) {
+    async delete(id: number) {
         try {
-            const client = await this.clientRepository.preload({
-                id,
-                ...update,
+            const client = await this.clientRepository.findOne({
+                where: { id }
             });
 
             if (!client) {
                 throw new NotFoundException(`Client ID ${id} not found!`);
             }
 
-            return this.clientRepository.save(client);
+            return this.clientRepository.remove(client);
         } catch (err) {
             throw err;
         }

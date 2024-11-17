@@ -8,7 +8,7 @@ import { DeleteService } from '../services/delete.service';
 import { NotFoundException } from '@nestjs/common';
 import { CreateClientDto } from '../dtos/create.dto';
 import { UpdateClientDto } from '../dtos/update.dto';
-import { Client } from '../entities/client.entity';
+import { Client } from '../../../../domain/entities/client.entity';
 
 describe('ClientController', () => {
     let controller: ClientController;
