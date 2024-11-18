@@ -1,76 +1,76 @@
 
 # Frontend - CRUD Application
 
-This is the frontend of the CRUD application, built using **React** and **Vite**. It provides a user interface to interact with the backend API.
+Este é o frontend da aplicação CRUD, construído usando **React** e **Vite**. Ele fornece uma interface de usuário para interagir com a API de backend.
 
-## Technologies Used
+## Tecnologias Utilizadas
 
-- **React**: A JavaScript library for building user interfaces.
-- **Vite**: A fast build tool and development server.
-- **Axios**: For making HTTP requests to the backend API.
-- **React Icons**: To enhance the UI with icons.
-- **TailwindCSS**: For styling the application.
-- **React Toastify**: For notifications.
-
----
-
-## Prerequisites
-
-Before running the project, ensure you have the following installed on your system:
-
-- **Node.js** (version 16 or higher): [Download Node.js](https://nodejs.org/)
-- **npm** or **yarn**: Comes with Node.js.
+- **React**: Uma biblioteca JavaScript para criar interfaces de usuário.
+- **Vite**: Uma ferramenta de construção rápida e servidor de desenvolvimento.
+- **Axios**: Para fazer solicitações HTTP para a API de backend.
+- **React Icons**: Para aprimorar a interface do usuário com ícones.
+- **TailwindCSS**: Para estilizar o aplicativo.
+- **React Toastify**: Para notificações.
 
 ---
 
-## Running the Application Locally
+## Pré-requisitos
 
-1. **Clone the Repository**
+Antes de executar o projeto, certifique-se de ter o seguinte instalado no seu sistema:
+
+- **Node.js** (versão 16 ou superior): [Download Node.js](https://nodejs.org/)
+- **npm** ou **yarn**: Com Node.js.
+
+---
+
+## Executando o aplicativo localmente
+
+1. **Clonar o Repositório**
    ```bash
    git clone https://github.com/your-username/your-repository.git
    cd your-repository/crud-frontend
    ```
 
-2. **Install Dependencies**
+2. **Instalar dependências**
    ```bash
    npm install
    ```
 
-3. **Configure the Environment**
-   Create a `.env` file in the root of the `crud-frontend` directory and set the following variable:
+3. **Configurar o ambiente**
+   Crie um arquivo `.env` na raiz do diretório `crud-frontend` e defina a seguinte variável:
    ```
    VITE_API_URL=http://localhost:3000
    ```
 
-   - Replace `http://localhost:3000` with the URL of your backend API if it is hosted elsewhere.
+   - Substitua `http://localhost:3000` com a URL da sua API de backend, caso ela esteja hospedada em outro lugar.
 
-4. **Start the Development Server**
+4. **Inicie o servidor de desenvolvimento**
    ```bash
    npm run dev
    ```
 
-5. **Access the Application**
-   Open your browser and navigate to `http://localhost:5173`.
+5. **Acesse a aplicação**
+   Abra seu navegador e navegue até: `http://localhost:5173`.
 
 ---
 
-## Build and Deployment
+## Construção e implantação
 
-To create a production-ready build of the application:
+Para criar uma versão pronta para produção da aplicação:
 
-1. **Build the Project**
+1. **Build do Projeto**
    ```bash
    npm run build
    ```
 
-2. **Preview the Build**
+2. **Preview da Build**
    ```bash
    npm run preview
    ```
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 / (root)
@@ -86,7 +86,7 @@ To create a production-ready build of the application:
 
 ---
 
-## Useful Commands
+## Comandos Úteis
 
 | Command          | Description                       |
 |-------------------|-----------------------------------|

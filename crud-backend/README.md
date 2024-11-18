@@ -142,3 +142,7 @@ docker run -p 3000:3000 crud-backend
 ## Observação
 
 Garanta que o banco de dados PostgreSQL esteja rodando corretamente antes de iniciar a aplicação.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
